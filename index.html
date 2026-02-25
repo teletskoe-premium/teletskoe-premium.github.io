@@ -330,14 +330,27 @@
             <a href="#captain" class="hover:text-gold transition-colors">Капитан</a>
         </div>
 
-        <div class="flex items-center gap-3">
-            <div class="flex flex-col md:flex-row gap-2">
-                <a href="tel:[+79619831979], [+79618933114]" class="bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black px-4 py-2 rounded-full text-[9px] font-bold uppercase tracking-wider active:scale-95 transition-all text-center">Бронь</a>
-            </div>
-            <button onclick="toggleMenu()" class="text-white hover:text-gold transition-colors p-2 bg-white/5 rounded-full border border-white/10">
-                <i data-lucide="menu" class="w-5 h-5"></i>
+        <div class="relative flex flex-col md:flex-row gap-2">
+            <button onclick="document.getElementById('phone-dropdown').classList.toggle('hidden')" 
+                    class="bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-black px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider active:scale-95 transition-all text-center flex items-center gap-2">
+                <span>Бронь</span>
+                <i data-lucide="chevron-down" class="w-3 h-3"></i>
             </button>
+        
+            <div id="phone-dropdown" class="hidden absolute top-full left-0 mt-2 w-max bg-[#05070a] border border-gold/30 rounded-xl shadow-2xl z-[100] overflow-hidden animate__animated animate__fadeIn">
+                <a href="tel:+79619831979" class="block px-6 py-3 text-[11px] text-white hover:bg-gold/10 transition-colors border-b border-white/5">
+                    +7 (961) 893-31-14 <span class="text-gold/50 text-[8px] ml-2">(Юлия)</span>
+                </a>
+                <a href="tel:+79618933114" class="block px-6 py-3 text-[11px] text-white hover:bg-gold/10 transition-colors">
+                    +7 (961) 983-19-79 <span class="text-gold/50 text-[8px] ml-2">(Евгений)</span>
+                </a>
+            </div>
         </div>
+        
+        <button onclick="toggleMenu()" class="text-white hover:text-gold transition-colors p-2 bg-white/5 rounded-full border border-white/10">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+
     </nav>
 
     <div id="mobile-menu" class="fixed inset-0 bg-black/98 backdrop-blur-3xl z-[60] opacity-0 invisible flex flex-col items-center justify-center space-y-10 text-center px-6">
