@@ -63,6 +63,22 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        dark: '#05070a'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        luxury: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -491,12 +507,11 @@
             <div class="w-full lg:w-1/2 space-y-6">
                 <span class="text-gold tracking-[0.4em] uppercase text-xs font-bold">Восемнадцать лет навигации. Тысячи миль. Один штурвал.</span>
                 <h2 class="font-luxury text-5xl md:text-7xl italic text-gold-gradient">Капитан Евгений</h2>
-                <p class="text-gray-400 font-light text-lg leading-relaxed">Говорят, что Озеро не пускает к себе случайных людей. 
-                <p class="text-gray-400 font-light text-lg leading-relaxed"></p>Опыт гида-капитана 18 лет, и каждый день для меня — как первый. 
+                <p class="text-gray-400 font-light text-lg leading-relaxed">Говорят, что Озеро не пускает к себе случайных людей.</p>
+                <p class="text-gray-400 font-light text-lg leading-relaxed">Опыт гида-капитана 18 лет, и каждый день для меня — как первый. 
                 За моей спиной тысячи пройденных миль и сотни экспедиций, но Алтын-Кёль не перестает меня удивлять.
-                Я знаю каждый грот, каждый опасный риф и каждый ракурс, от которого захватывает дух. Мой приоритет — ваша абсолютная безопасность и безупречный комфорт. Я не вожу экскурсии, я провожу экспедиции для тех, кто ценит качество, тишину и настоящий характер Алтая.
-                    
-                    Если вы готовы увидеть настоящее Телецкое — я готов стать вашим капитаном.</p>
+                Я знаю каждый грот, каждый опасный риф и каждый ракурс, от которого захватывает дух. Мой приоритет — ваша абсолютная безопасность и безупречный комфорт. Я не вожу экскурсии, я провожу экспедиции для тех, кто ценит качество, тишину и настоящий характер Алтая.<br><br>
+                Если вы готовы увидеть настоящее Телецкое — я готов стать вашим капитаном.</p>
                 
                 <div class="flex flex-col gap-4 mt-8 items-center lg:items-start">
                     <a href="tel:+79618933114" class="text-white hover:text-gold transition-all text-xl font-bold italic">Юлия: +79618933114</a>
@@ -537,7 +552,7 @@
                 time: '2.5 - 3 часа',
                 price: '3 000 ₽',
                 images: ['https://res.cloudinary.com/dwexyklqe/image/upload/v1771912592/1200px-%D0%92%D0%BE%D0%B4%D0%BE%D0%BF%D0%B0%D0%B4_%D0%9A%D0%BE%D1%80%D0%B1%D1%832.jpg'],
-                desc: 'Классика Телецкого озера. Включает посещение самых знаковых водопадов заповедной зоны и живописных островов.',
+                desc: 'Классика Телецкого озера. Включает посещение самых знаковых водопадов заповедной зоны и живописного острова.',
                 list: ['• Водопад Корбу', '• Водопад Киште', '• Остров Влюблённых', '• Водопад Эстюба', '• Кедрогор']
             },
             author: {
@@ -555,7 +570,7 @@
                 time: '5 - 6 часов',
                 price: '7 000 ₽',
                 images: ['https://res.cloudinary.com/dwexyklqe/image/upload/v1771913331/smotrovaya-ploshadka-yailinskaya-terrasa.jpg'],
-                desc: 'Полномасштабная экспедиция на Южный Берег Телецкого. Пересекаем все озеро, чтобы увидеть долину реки Чулышман.',
+                desc: 'Полномасштабная экспедиция на Южный Берег Телецкого. Пересекаем все озеро, чтобы увидеть устье реки Чулышман.',
                 list: ['• Южный берег (пляж)', '• Устье Чулышмана', '• Река Чили', '• Гроты', '• Водопады: Корбу, Чоодор, Эстюба, Аю-Кечпес, 40 грехов, Девичьи Слезы']
             }
         };
